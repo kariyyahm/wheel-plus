@@ -1,19 +1,17 @@
 <template>
   <h1>{{ msg }}</h1>
-  <button @click="count++">count is: {{ count }}</button>
-  <p>Edit <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'HelloWorld',
   props: {
-    msg: String
+    msg: {
+      type: String,
+      default: '我就是那个switch'
+    }
   },
   data() {
-    return {
-      count: 0
-    }
+    return {}
   }
 }
 </script>

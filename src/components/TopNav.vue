@@ -1,6 +1,7 @@
 <!-- TopNav.vue -->
 <template>
   <div class="TopNav">
+    <button class="NavBtn" @click="openAside">==</button>
     <img class="logo" @click="goHome" alt="Vue logo" src="../assets/logo.png" width="30" height="30" />
     <ul class="menu">
       <li>xxx</li>
@@ -11,13 +12,18 @@
 </template>
 
 <script lang="ts">
+import { ref, inject } from "vue";
+
 export default {
   setup() {
     const goHome = () => {
       console.log('1111111')
-
     }
-    return { goHome }
+    const openAside = () => {
+      asideVisible.value = !asideVisible.value
+    }
+    const asideVisible = inject('asideVisible')
+    return { goHome, openAside, asideVisible }
   }
 }
 </script>
@@ -29,6 +35,10 @@ export default {
   display: flex;
   justifiy-content: center;
   item-align: center;
+
+  .NavBtn {
+    display: none;
+  }
 
   .logo {
     margin-left: 20px;
@@ -57,6 +67,12 @@ export default {
 
     .menu {
       display: none;
+    }
+
+    .NavBtn {
+      display: inline-block;
+      position: absolute;
+      left: 10px;
     }
   }
 }</style>
