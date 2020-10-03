@@ -13,8 +13,6 @@ export default {
   computed: {},
   methods: {},
   watch: {},
-  created() {
-  }
 }
 </script>
 
