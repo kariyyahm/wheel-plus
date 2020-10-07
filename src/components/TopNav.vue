@@ -1,4 +1,3 @@
-<!-- TopNav.vue -->
 <template>
   <div class="TopNav">
     <button class="NavBtn" @click="openAside">==</button>
