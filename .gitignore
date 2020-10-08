@@ -11,6 +11,9 @@ sonarlint.json
 sigma_db/
 *-rxdb-*/
 
+dist
+/dist
+
 # Log files
 npm-debug.log*
 yarn-debug.log*

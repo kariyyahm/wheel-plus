@@ -1,7 +1,9 @@
 <template>
   <div class="TopNav">
-    <button class="NavBtn" @click="openAside">==</button>
-    <img class="logo" @click="goHome" alt="Vue logo" src="../assets/logo.png" width="30" height="30" />
+    <button class="NavBtn" @click="openAside">===<br>===</button>
+    <router-link to="/" class="logo">
+      <img class="logo" @click="goHome" alt="Vue logo" src="../assets/logo.png" width="30" height="30" />
+    </router-link>
     <ul class="menu">
       <li>xxx</li>
       <li>yyy</li>
