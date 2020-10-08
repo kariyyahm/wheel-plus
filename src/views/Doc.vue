@@ -2,7 +2,7 @@
 <template>
   <TopNav />
   <div class="Doc">
-    <aside v-if="asideVisible">
+    <aside v-if="asideVisible" class="Aside">
       <h2>文档</h2>
       <ol>
         <li>
@@ -56,7 +56,8 @@ export default {
   display: flex;
 
   .Aside {
-
+    padding-right: 20px;
+    background-color: #fff;
   }
 }
 @media (max-width: 500px) {
