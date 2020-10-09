@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="topNavAndBanner">
-      <Topnav />
+      <TopNav />
       <div class="banner">
         <h1>wheel UI</h1>
         <h2>一个厉害的 UI 框架</h2>
@@ -40,10 +40,10 @@
 </template>
 
 <script lang="ts">
-import Topnav from "../components/Topnav.vue";
+import TopNav from "../components/TopNav.vue";
 export default {
   components: {
-    Topnav
+    TopNav
   },
 };
 </script>
